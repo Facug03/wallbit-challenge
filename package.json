@@ -11,12 +11,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@phosphor-icons/react": "2.1.7",
     "framer-motion": "12.0.0-alpha.1",
+    "nuqs": "2.2.1",
     "react": "19.0.0-rc-7ac8e612-20241113",
     "react-dom": "19.0.0-rc-7ac8e612-20241113"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@types/node": "^22.9.0",
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc",
     "@vitejs/plugin-react-swc": "3.5.0",
