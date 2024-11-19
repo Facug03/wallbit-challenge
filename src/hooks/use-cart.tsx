@@ -20,7 +20,9 @@ function cartReducer(state: Cart, action: CartAction): Cart {
       let updatedProducts: Product[] = []
 
       if (existingProduct) {
-        updatedProducts = state.products.map((p) => (p.id === product.id ? { ...p, quantity: p.quantity + quantity } : p))
+        updatedProducts = state.products.map((p) =>
+          p.id === product.id ? { ...p, quantity: quantity > 0 ? p.quantity + quantity : p.quantity } : p
+        )
       } else {
         updatedProducts = [...state.products, { ...product, quantity: quantity > 0 ? quantity : 1 }]
       }
