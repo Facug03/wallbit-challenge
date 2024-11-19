@@ -31,9 +31,10 @@
 
 ## 🛠️ Stack
 
-- React
+- React 19
 - Tailwind CSS
 - Biome
+- Motion
 
 
 
