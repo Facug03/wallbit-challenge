@@ -93,7 +93,7 @@ function App() {
             {cart.createdAt && <span className="text-sm text-gray-500">Creado: {cart.createdAt}</span>}
           </div>
 
-          <ShareCart products={cart.products} />
+          {cart.products.length > 0 && <ShareCart products={cart.products} />}
         </header>
 
         <AnimatePresence mode="popLayout">
@@ -117,7 +117,7 @@ function App() {
 
         {cart.products.length > 0 && (
           <div className="flex flex-col justify-center items-end">
-            <p className="text-[15px] text-gray-700">Productos: {cart.totalProducts}</p>
+            <p className="text-[15px] text-gray-700">Productos agregados: {cart.totalProducts}</p>
             <p className="text-[15px] text-gray-700">Total: ${cart.cost.toFixed(2)}</p>
           </div>
         )}
