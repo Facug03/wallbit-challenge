@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    max-width: 64rem;
+    max-width: 80rem;
     margin: 0 auto;
   }
 
