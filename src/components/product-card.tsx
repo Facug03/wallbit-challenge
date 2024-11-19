@@ -35,8 +35,8 @@ export function ProductCard({
         </motion.p>
 
         <motion.div layout="position" className="flex gap-x-2 items-center flex-wrap">
-          <motion.p layout="position" className="text-sm text-gray-500">
-            <span className="text-blue-500 font-semibold">Cantidad</span>: {product.quantity}
+          <motion.p layout="position" className="text-sm text-blue-500 font-semibold">
+            Cantidad:
           </motion.p>
 
           <div className="flex gap-x-2 items-center">
@@ -48,6 +48,10 @@ export function ProductCard({
             >
               <PlusCircle size={24} />
             </motion.button>
+
+            <motion.p layout="position" className="text-sm text-gray-500">
+              {product.quantity}
+            </motion.p>
 
             <motion.button
               layout="position"
