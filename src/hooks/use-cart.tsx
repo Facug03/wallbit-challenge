@@ -22,7 +22,7 @@ function cartReducer(state: Cart, action: CartAction): Cart {
       if (existingProduct) {
         updatedProducts = state.products.map((p) => (p.id === product.id ? { ...p, quantity: p.quantity + quantity } : p))
       } else {
-        updatedProducts = [...state.products, { ...product, quantity }]
+        updatedProducts = [...state.products, { ...product, quantity: quantity > 0 ? quantity : 1 }]
       }
 
       const updatedCart = {
