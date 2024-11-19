@@ -2,10 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-    :root {
-        max-width: 80rem;
-        margin: 0 auto;
-    }
+  :root {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  @font-face {
+    font-family: "Geist";
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+    src: url(/fonts/Geist-VariableFont_wght.ttf) format("truetype");
+  }
+
+  html {
+    font-family: "Geist", system-ui, sans-serif;
+  }
 }
