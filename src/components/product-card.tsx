@@ -17,7 +17,7 @@ export function ProductCard({
       initial={{ scale: 0.8, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       exit={{ scale: 0.8, opacity: 0 }}
-      className="flex gap-4 p-4 items-center border border-gray-300 rounded-lg mb-4 flex-wrap"
+      className="flex gap-4 p-4 items-center border border-gray-300 rounded-lg mb-4 flex-wrap sm:flex-nowrap"
     >
       <motion.img
         layout="position"
