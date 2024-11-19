@@ -83,9 +83,7 @@ export function ProductCard({
               exit={{ scale: 0.8, opacity: 0, y: -25 }}
               className="flex flex-col gap-1"
             >
-              <motion.p className="text-sm text-gray-500">
-                <span className="text-blue-500 font-semibold">Categoría</span>: {product.category}
-              </motion.p>
+              <motion.p className="text-sm text-gray-500">Categoría: {product.category}</motion.p>
               <motion.p className="text-sm text-gray-500 flex gap-1 items-center">
                 {product.rating.rate} <Star size={16} />
               </motion.p>
