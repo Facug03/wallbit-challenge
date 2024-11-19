@@ -35,7 +35,7 @@ export function ProductCard({
         </motion.p>
 
         <motion.div layout="position" className="flex gap-x-2 items-center flex-wrap">
-          <motion.p layout="position" className="text-sm text-blue-500 font-semibold">
+          <motion.p layout="position" className="text-sm text-gray-500">
             Cantidad:
           </motion.p>
 
